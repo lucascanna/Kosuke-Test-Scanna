@@ -82,7 +82,7 @@ export function Home() {
                   }}
                 />
                 <Sparkles className="mr-1 h-3 w-3" />
-                Production Ready
+                Heyy
               </Badge>
             </motion.div>
 

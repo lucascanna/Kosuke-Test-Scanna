@@ -12,26 +12,26 @@ export default function RootPage() {
 }
 
 const HomepageStructuredData = () => {
-  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://template.kosuke.ai';
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://pippo.ai';
 
   const websiteData = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'Kosuke Template',
+    name: 'PIPPO',
     description:
-      'Production-ready Next.js template with auth, billing, database, and deployment. Skip the boilerplate and ship features fast.',
+      'The complete platform for building, scaling, and monetizing web applications. Enterprise-ready tools for modern teams.',
     url: baseUrl,
-    sameAs: ['https://github.com/Kosuke-Org/kosuke-template'],
+    sameAs: ['https://github.com/pippo-ai'],
   };
 
   const softwareData = {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
-    name: 'Kosuke Template',
+    name: 'PIPPO',
     applicationCategory: 'DeveloperApplication',
     operatingSystem: 'Web Browser',
     description:
-      'Production-ready Next.js template with authentication, billing, database, and deployment features built-in.',
+      'The complete platform with authentication, billing, database, and deployment features built-in for modern web applications.',
     offers: {
       '@type': 'Offer',
       price: '0',
@@ -39,11 +39,11 @@ const HomepageStructuredData = () => {
     },
     author: {
       '@type': 'Organization',
-      name: 'Kosuke Template',
+      name: 'PIPPO',
     },
     programmingLanguage: ['TypeScript', 'JavaScript', 'React'],
     runtimePlatform: 'Node.js',
-    codeRepository: 'https://github.com/Kosuke-Org/kosuke-template',
+    codeRepository: 'https://github.com/pippo-ai',
   };
 
   return (

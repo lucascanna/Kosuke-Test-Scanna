@@ -15,11 +15,11 @@ export default function Footer({ className }: FooterProps) {
     <footer className={cn('mt-auto w-full border-t py-4', className)}>
       <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
         <p className="text-muted-foreground text-sm">
-          © {new Date().getFullYear()} Kosuke Template. All rights reserved.
+          © {new Date().getFullYear()} PIPPO. All rights reserved.
         </p>
         <div className="flex items-center gap-4">
           <Link
-            href="https://github.com/filopedraz/kosuke-core"
+            href="https://github.com/pippo-ai"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-foreground transition-colors"

@@ -82,18 +82,18 @@ export function Home() {
                   }}
                 />
                 <Sparkles className="mr-1 h-3 w-3" />
-                Production Ready
+                Enterprise Ready
               </Badge>
             </motion.div>
 
             <h1 className="mb-4 px-2 text-3xl leading-tight font-bold tracking-tight sm:mb-6 sm:text-5xl lg:text-7xl">
-              Skip the boilerplate
+              Build with PIPPO
               <br />
-              Ship features
+              Ship faster
             </h1>
 
             <p className="text-muted-foreground mx-auto mb-6 max-w-2xl px-2 font-sans text-base sm:mb-8 sm:text-lg lg:text-xl">
-              Production-ready Next.js template with auth, billing, database, and deployment.
+              The complete platform for building, scaling, and monetizing web applications.
             </p>
           </motion.div>
 
@@ -115,15 +115,15 @@ export function Home() {
             ) : (
               // Logged-out user CTAs
               <Button size="lg" className="w-full sm:w-auto" asChild>
-                <Link href="https://github.com/Kosuke-Org/kosuke-template" target="_blank">
+                <Link href="/sign-up">
                   <Rocket className="mr-2 h-4 w-4" />
-                  git clone kosuke
+                  Get Started
                 </Link>
               </Button>
             )}
 
             <Button size="lg" variant="outline" className="w-full sm:w-auto" asChild>
-              <Link href="https://github.com/Kosuke-Org/kosuke-template#readme" target="_blank">
+              <Link href="https://docs.pippo.ai" target="_blank">
                 <Code2 className="mr-2 h-4 w-4" />
                 Documentation
               </Link>
@@ -143,10 +143,10 @@ export function Home() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="mb-3 text-2xl font-bold sm:mb-4 sm:text-3xl lg:text-4xl">
-              # Everything you need
+              # Everything included
             </h2>
             <p className="text-muted-foreground mx-auto max-w-2xl px-2 font-sans text-base sm:text-lg">
-              Carefully chosen technologies that work together seamlessly
+              A complete platform with all the tools you need to succeed
             </p>
           </motion.div>
 
@@ -196,7 +196,7 @@ export function Home() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="mb-3 text-2xl font-bold sm:mb-4 sm:text-3xl lg:text-4xl">
-              # built with
+              # Powered by industry leaders
             </h2>
           </motion.div>
 
@@ -237,10 +237,10 @@ export function Home() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="mb-3 text-2xl font-bold sm:mb-4 sm:text-3xl lg:text-4xl">
-              # Why developers choose this
+              # Why teams choose PIPPO
             </h2>
             <p className="text-muted-foreground mx-auto max-w-2xl px-2 font-sans text-base sm:text-lg">
-              Every component designed for speed, security, and scale
+              Built for teams that demand performance, security, and scale
             </p>
           </motion.div>
 
@@ -369,11 +369,11 @@ export function Home() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="mb-4 text-3xl font-bold sm:mb-6 sm:text-4xl lg:text-5xl">
-              Ready to ship?
+              Ready to build with PIPPO?
             </h2>
 
             <p className="text-muted-foreground mb-8 px-2 font-sans text-base sm:mb-12 sm:text-lg">
-              Join developers building the next generation of web applications
+              Join teams building the future of web applications
             </p>
 
             <div className="flex flex-col justify-center gap-3 sm:flex-row sm:gap-4">
@@ -387,9 +387,9 @@ export function Home() {
                     </Link>
                   </Button>
                   <Button size="lg" variant="outline" className="w-full sm:w-auto" asChild>
-                    <Link href="https://github.com/Kosuke-Org/kosuke-template" target="_blank">
+                    <Link href="https://pippo.ai" target="_blank">
                       <Star className="mr-2 h-4 w-4" />
-                      Star on GitHub
+                      Visit PIPPO
                     </Link>
                   </Button>
                 </>
@@ -397,18 +397,15 @@ export function Home() {
                 // Logged-out user final CTA
                 <>
                   <Button size="lg" className="w-full sm:w-auto" asChild>
-                    <Link href="https://github.com/Kosuke-Org/kosuke-template" target="_blank">
-                      <Star className="mr-2 h-4 w-4" />
-                      Star on GitHub
+                    <Link href="/sign-up">
+                      <Rocket className="mr-2 h-4 w-4" />
+                      Start Free
                     </Link>
                   </Button>
 
                   <Button size="lg" variant="outline" className="w-full sm:w-auto" asChild>
-                    <Link
-                      href="https://github.com/Kosuke-Org/kosuke-template/blob/main/cli/README.md"
-                      target="_blank"
-                    >
-                      Setup Guide
+                    <Link href="https://docs.pippo.ai" target="_blank">
+                      Learn More
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
                   </Button>

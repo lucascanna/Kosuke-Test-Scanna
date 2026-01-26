@@ -16,6 +16,8 @@ const knipConfig = {
     // Queue system - public API for manual job triggering
     'lib/queue/queues/**',
     'lib/queue/init-workers.ts',
+    // Database seed script - run manually via documentation
+    'lib/db/scripts/db-seed.ts',
   ],
   ignoreDependencies: [
     // Shadcn/UI dependencies (only used in components/ui/** which is ignored)
@@ -28,17 +30,13 @@ const knipConfig = {
     // They are used but not imported in the codebase
     'drizzle-zod',
     '@trpc/next',
-    // Essential template packages - part of the starter template feature set
-    '@dnd-kit/core',
-    '@dnd-kit/sortable',
-    '@dnd-kit/utilities',
-    '@tanstack/react-table',
-    'date-fns',
-    'framer-motion',
-    'react-day-picker',
-    'recharts',
-    'xlsx',
-    'zustand',
+    // DevDependencies used by tools/scripts but not imported
+    '@eslint/eslintrc',
+    '@faker-js/faker',
+    '@react-email/preview-server',
+    '@testing-library/user-event',
+    'ts-node',
+    'tw-animate-css',
   ],
   ignoreBinaries: ['shadcn'],
   rules: {

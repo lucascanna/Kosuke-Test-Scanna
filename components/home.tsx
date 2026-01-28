@@ -1,5 +1,7 @@
 'use client';
 
+import { useState } from 'react';
+
 import Link from 'next/link';
 
 import { motion } from 'framer-motion';
@@ -48,6 +50,12 @@ export function Home() {
 
   const dashboardUrl = organization ? `/org/${organization.slug}/dashboard` : '/';
 
+  // Random space-themed emoticon that stays fixed on page load
+  const [spaceEmoticon] = useState(() => {
+    const spaceEmoticons = ['🪐', '🌌', '⭐', '🚀', '🌠', '✨'];
+    return spaceEmoticons[Math.floor(Math.random() * spaceEmoticons.length)];
+  });
+
   return (
     <div className="bg-background min-h-screen w-full pt-[60px]">
       {/* Hero Section - Terminal First */}
@@ -87,7 +95,7 @@ export function Home() {
             </motion.div>
 
             <h1 className="mb-4 px-2 text-3xl leading-tight font-bold tracking-tight sm:mb-6 sm:text-5xl lg:text-7xl">
-              PLUTO
+              PLUTO <span className="text-3xl sm:text-5xl lg:text-7xl">{spaceEmoticon}</span>
             </h1>
 
             <p className="text-muted-foreground mx-auto mb-6 max-w-2xl px-2 font-sans text-base sm:mb-8 sm:text-lg lg:text-xl">
